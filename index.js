@@ -1,45 +1,45 @@
-// const nav = [
-//   {
-//     id: 1,
-//     link: "Home",
-//   },
+const nav = [
+  {
+    id: 1,
+    link: "Home",
+  },
 
-//   {
-//     id: 2,
-//     link: "About",
-//   },
+  {
+    id: 2,
+    link: "About",
+  },
 
-//   {
-//     id: 3,
-//     link: "Html",
-//   },
+  {
+    id: 3,
+    link: "Html",
+  },
 
-//   {
-//     id: 4,
-//     link: "Blog",
-//   },
-// ];
+  {
+    id: 4,
+    link: "Blog",
+  },
+];
 
-// let nMain = document.querySelector(".n-main");
+let nMain = document.querySelector(".n-main");
 
-// const htmlga = nav.map((student) => {
-//   let p = document.createElement("p");
-//   p.innerHTML = student.link;
-//   nMain.appendChild(p);
+const htmlga = nav.map((student) => {
+  let p = document.createElement("p");
+  p.innerHTML = student.link;
+  nMain.appendChild(p);
 
-//   nMain.style.display = "flex";
-//   nMain.style.alignItems = "center";
-//   nMain.style.justifyContent = "space-between";
-//   p.style.gap = "30px";
-//   nMain.style.background = "brown";
-//   nMain.style.width = "100%";
-//   nMain.style.height = "100px"
+  nMain.style.display = "flex";
+  nMain.style.alignItems = "center";
+  nMain.style.justifyContent = "space-evenly";
+  p.style.gap = "30px";
+  nMain.style.background = "brown";
+  nMain.style.width = "100%";
+  nMain.style.height = "100px"
 
-  // p.onclick = function () {
-  //   nMain.removeChild(p);
-  //   alert("P KETTI!!!");
-  // };
-// });
+  p.onclick = function () {
+    nMain.removeChild(p);
+    alert("P KETTI!!!");
+  };
+});
 
 let headerEl = document.querySelector(".n-header");
 
@@ -78,7 +78,7 @@ const header = [
   },
 ];
 
-const htmlga = header.map((student) => {
+const htmlga1 = header.map((student) => {
   let h1 = document.createElement("h1");
   let img = document.createElement("img");
   h1.innerHTML = student.name;
